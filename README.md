@@ -69,8 +69,13 @@ The CMOS-LTE Comparator uses Linear Tunable Transconductance Element and inverte
 The thermometer to gray encoder works on the principle of generating 5 individual gray bits using a DCVSL logic style circuitry [shown in Fig. 3]. The individual sub-circuits together compose the thermometer to gray encoding logic.
 
 <p align="center">
+  <img src="Imgs/DCVSL Logic.jpg"></br>
+  Fig 3(a): DCVSL Logic for Thermometer to Gray Encoder
+</p>
+
+<p align="center">
   <img src="Imgs/Ther_Gray_Enc_DCVSL.jpg"></br>
-  Fig 3: DCVSL Logic for Thermometer to Gray Encoder 
+  Fig 3(b): Thermometer to Gray Encoder using DCVSL Logic Generation Ckts
 </p>
 
 # Custom Digital Logic
