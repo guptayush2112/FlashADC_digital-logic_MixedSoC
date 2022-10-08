@@ -5,10 +5,10 @@ Featured in this repository is the Design and Analysis of a 5-bit Flash ADC buil
 # Table of Contents
  * [Introduction](#Introduction)
  * [Literature Survey](#Literature-Survey)
- * [Tools Used](#Tools-Used)
  * [Working Principle](#Working-Principle)
  * [5-Bit Flash ADC Design](#5-Bit-Flash-ADC-Design)
  * [Custom Digital Logic](#Custom-Digital-Logic)
+ * [Tools Used](#Tools-Used)
  * [Analog Schematic Design and Simulation](#Analog-Schematic-Design-and-Simulation)
  * [Verilog Code Development and Simulation](#Verilog-Code-Development-and-Simulation)
  * [Observations & Conclusion](#Observations-&-Conclusion)
