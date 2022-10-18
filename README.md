@@ -143,71 +143,177 @@ The schematic and component symbol of the DRAM was designed at a transistor-leve
 </p>
 
 <p align="center">
-  <img src="Imgs/Comp.jpg"></br>
+  <img src="Imgs/LTE-Comparator/Comp_Complete_Schematic.jpg"></br>
   Fig. 6(a) : Comparator Schematic
 </p>
 
 <p align="center">
-  <img src="Imgs/Comp_symb.jpg"></br>
+  <img src="Imgs/LTE-Comparator/Comp_symb.jpg"></br>
   Fig. 6(b) : Comparator Symbol
 </p>
 
 
 <p align="center">
-  <img src="Imgs/Comp_tb.jpg"></br>
+  <img src="Imgs/LTE-Comparator/Comp_tb.jpg"></br>
   Fig. 6(c) : Comparator Testbench
 </p>
 
 
 ## Thermometer to Gray Encoder
 
+### Gray bit-4 Circuit
 <p align="center">
-  <img src="Schematics/Schematic.jpg"></br>
-  Fig. 7(a): Gray Bit 0 Generation Schematic
+  <img src="Imgs/Thermometer-Gray-Enc/g4ckt.jpg"></br>
+  Fig. 7(a): Gray Bit-4 Generation Schematic
 </p>
 
 <p align="center">
-  <img src="Schematics/Schematic.jpg"></br>
-  Fig. 7(b): Gray Bit 1 Generation Schematic
+  <img src="Imgs/Thermometer-Gray-Enc/g4_symb.jpg"></br>
+  Fig. 7(b): Symbol
 </p>
 
 <p align="center">
-  <img src="Schematics/Schematic.jpg"></br>
-  Fig. 7(c): Gray Bit 2 Generation Schematic
+  <img src="Imgs/Thermometer-Gray-Enc/g4_tb.jpg"></br>
+  Fig. 7(c): Testbench
+</p>
+
+### Gray bit-3 Circuit
+<<p align="center">
+  <img src="Imgs/Thermometer-Gray-Enc/g3ckt.jpg"></br>
+  Fig. 8(a): Gray Bit-3 Generation Schematic
 </p>
 
 <p align="center">
-  <img src="Schematics/Schematic.jpg"></br>
-  Fig. 7(d): Gray Bit 3 Generation Schematic
+  <img src="Imgs/Thermometer-Gray-Enc/g3_symb.jpg"></br>
+  Fig. 8(b): Symbol
 </p>
 
 <p align="center">
-  <img src="Schematics/Schematic.jpg"></br>
-  Fig. 7(e): Gray Bit 4 Generation Schematic
+  <img src="Imgs/Thermometer-Gray-Enc/g3_tb.jpg"></br>
+  Fig. 8(c): Testbench
 </p>
+
+### Gray bit-2 Circuit
+<p align="center">
+  <img src="Imgs/Thermometer-Gray-Enc/g2ckt.jpg"></br>
+  Fig. 9(a): Gray Bit-2 Generation Schematic
+</p>
+
+<p align="center">
+  <img src="Imgs/Thermometer-Gray-Enc/g2_symb.jpg"></br>
+  Fig. 9(b): Symbol
+</p>
+
+<p align="center">
+  <img src="Imgs/Thermometer-Gray-Enc/g2_tb.jpg"></br>
+  Fig. 9(c): Testbench
+</p>
+
+### Gray bit-1 Circuit
+<p align="center">
+  <img src="Imgs/Thermometer-Gray-Enc/g1ckt.jpg"></br>
+  Fig. 10(a): Gray Bit-1 Generation Schematic
+</p>
+
+<p align="center">
+  <img src="Imgs/Thermometer-Gray-Enc/g1_symb.jpg"></br>
+  Fig. 10(b): Symbol
+</p>
+
+<p align="center">
+  <img src="Imgs/Thermometer-Gray-Enc/g1_tb.jpg"></br>
+  Fig. 10(c): Testbench
+</p>
+
+### Gray bit-0 Circuit
+<p align="center">
+  <img src="Imgs/Thermometer-Gray-Enc/g0ckt.jpg"></br>
+  Fig. 11(a): Gray Bit-0 Generation Schematic
+</p>
+
+<p align="center">
+  <img src="Imgs/Thermometer-Gray-Enc/g0_symb.jpg"></br>
+  Fig. 11(b): Symbol
+</p>
+
+<p align="center">
+  <img src="Imgs/Thermometer-Gray-Enc/g0_tb.jpg"></br>
+  Fig. 11(c): Testbench
+</p>
+
 
 ## Transient Analysis & SPICE Netlist
 
 ### LTE Comparator
 
 <p align="center">
-  <img src="Imgs/Comp_op_vop_high.jpg"></br>
-  Fig. 8: Comparator Trans Analysis
+  <img src="Imgs/LTE-Comparator/Comp_trans.jpg"></br>
+  Fig. 12: Comparator Trans Analysis
 </p>
 
 Herewith is the Netlist generated for the above design:
 
-	*  Generated for: 
-	*  Design library name: 
-	*  Design cell name: 
-	*  Design view name: schematic
-	.lib 
+	* c:\fossee\esim-workspace\test_lte-comparator\test_lte-comparator.cir
+
+	.include LTE_Comp.sub
+	.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
+	.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__linear.model.spice"
+	.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
+	.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__inductors.model.spice"
+	.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__r+c.model.spice"
+	.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__pnp.model.spice"
+	.lib "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tt
+	x1 vin vout net-_x1-pad3_ net-_x1-pad4_ net-_x1-pad5_ LTE_Comp
+	v1  net-_x1-pad4_ gnd 1v
+	v2  vin gnd sine(0 4V 10000 0 0)
+	v4  net-_x1-pad3_ gnd 0.9v
+	v3  net-_x1-pad5_ gnd 2v
+	* s c m o d e
+	* u1  vin plot_v1
+	* u2  vout plot_v1
+	.tran 10e-09 0.5e-03 0e-03
+
+	* Control Statements 
+	.control
+	run
+	print allv > plot_data_v.txt
+	print alli > plot_data_i.txt
+	plot v(vin)
+	plot v(vout)
+	.endc
+	.end
+
 
 ### Thermometer to Gray Encoder
 
 <p align="center">
+  <img src="Imgs/Thermometer-Gray-Enc/g4_trans.jpg"></br>
+  Fig. 13(a): Trans Analysis of G4 ckt
+</p>
+
+<p align="center">
+  <img src="Imgs/Thermometer-Gray-Enc/g3_trans.jpg"></br>
+  Fig. 13(b): Trans Analysis of G3 ckt
+</p>
+
+<p align="center">
+  <img src="Imgs/Thermometer-Gray-Enc/g2_trans.jpg"></br>
+  Fig. 13(c): Trans Analysis of G2 ckt
+</p>
+
+<p align="center">
+  <img src="Imgs/Thermometer-Gray-Enc/g1_trans.jpg"></br>
+  Fig. 13(d): Trans Analysis of G1 ckt
+</p>
+
+<p align="center">
+  <img src="Imgs/Thermometer-Gray-Enc/g0_trans.jpg"></br>
+  Fig. 13(e): Trans Analysis of G0 ckt
+</p>
+
+<p align="center">
   <img src="Schematics/Schematic.jpg"></br>
-  Fig. 9: Thermometer Encoder Ckt Trans Analysis
+  Fig. 13(f): Trans Analysis of Complete Gray Enc ckt
 </p>
 
 Herewith is the Netlist generated for the above design:
@@ -237,12 +343,12 @@ The digital blocks were first written in Verilog as per the suitable modelling s
 
 <p align="center">
   <img src="Testbench Simulation/tb350.jpg"></br>
-  Fig. 10 (a): Decoder Output when Gray Bit = 
+  Fig. 14 (a): Decoder Output when Gray Bit = 
 </p>
 
 <p align="center">
   <img src="Testbench Simulation/tb350.jpg"></br>
-  Fig. 10 (b): Decoder Output when Gray Bit = 
+  Fig. 14 (b): Decoder Output when Gray Bit = 
 </p>
 
 ### 32-bit Priority Encoder
@@ -251,22 +357,22 @@ The simulation for 4 different 5-bit Gray code combinations as per the truth tab
 
 <p align="center">
   <img src="Imgs/ip_gray_00000.jpg"></br>
-  Fig. 11 (a): When Gray code Decoder input = 00000
+  Fig. 15 (a): When Gray code Decoder input = 00000
 </p>
 
 <p align="center">
   <img src="Imgs/ip_gray_11111.jpg"></br>
-  Fig. 11 (b): When Gray code Decoder input = 11111
+  Fig. 15 (b): When Gray code Decoder input = 11111
 </p>
 
 <p align="center">
   <img src="Imgs/ip_gray_10000.jpg"></br>
-  Fig. 11 (c): When Gray code Decoder input = 10000
+  Fig. 15 (c): When Gray code Decoder input = 10000
 </p>
 
 <p align="center">
   <img src="Imgs/ip_gray_00011.jpg"></br>
-  Fig. 11 (d): When Gray code Decoder input = 00011
+  Fig. 15 (d): When Gray code Decoder input = 00011
 </p>
 
 # Observations & Conclusion
