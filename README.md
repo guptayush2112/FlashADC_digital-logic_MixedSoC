@@ -36,7 +36,7 @@ A prime example of Mixed Signal Integrated circuit would be a DAC or a ADC, both
 # Working Principle
 
 <p align="center">
-<img src="Imgs/Blk Diag of 5b Flash ADC.jpg"></br>
+<img src="[Imgs/Blk Diag of 5b Flash ADC.jpg](https://raw.githubusercontent.com/guptayush2112/FlashADC_digital-logic_MixedSoC/5877d1f39abfeb30fd7b6f455093e7762dd39733/Imgs/Blk%20Diag%20of%205b%20Flash%20ADC.jpg)"></br>
   Fig 1: Flash ADC-Digital Logic Interface
 </p>
 
