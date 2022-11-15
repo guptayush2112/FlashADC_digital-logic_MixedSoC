@@ -36,7 +36,6 @@ A prime example of Mixed Signal Integrated circuit would be a DAC or a ADC, both
 # Working Principle
 
 <p align="center">
-	
 ![BlkDiag](https://user-images.githubusercontent.com/72560181/201829701-5511e9ba-f90c-4bba-a575-4af76565b4e7.jpg)</br>
 	Fig 1: Reference Circuit for LTE Comparator
 </p>
