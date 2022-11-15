@@ -327,7 +327,7 @@ Herewith is the Netlist generated for the above design:
 
 # Verilog Code Development and Simulation
 
-## 5-to-32 Gray to Thermometer Decoder using Behvaioral Modelling
+## 5-to-32 Gray to Thermometer Decoder using Behavioral Modelling
 
 For Behavioral Verilog code, kindly refer to: <a href='https://github.com/guptayush2112/FlashADC_digital-logic_MixedSoC/blob/main/Verilog%20src%20codes/dec_gray532_bh.v'>5-to-32 Thermometer Decoder</a></br>
 
