@@ -35,9 +35,7 @@ A prime example of Mixed Signal Integrated circuit would be a DAC or a ADC, both
 
 # Working Principle
 
-<p align="center">
-![Blk Diag of 5b Flash ADC](https://user-images.githubusercontent.com/72560181/201829701-5511e9ba-f90c-4bba-a575-4af76565b4e7.jpg)</br>
-  Fig 1: Flash ADC-Digital Logic Interface
+![BlkDiag](https://user-images.githubusercontent.com/72560181/201829701-5511e9ba-f90c-4bba-a575-4af76565b4e7.jpg)
 </p>
 
 With respect to the Fig. 1 above, the circuitry of the design follows a mixed approach wherein some part is designed in SPICE using netlists and some part is designed using Hardware Description Language [Verilog]. But the overall principle on which this SoC works can be broadly jotted down in the following:
