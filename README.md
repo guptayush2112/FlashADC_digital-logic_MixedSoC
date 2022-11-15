@@ -38,6 +38,7 @@ A prime example of Mixed Signal Integrated circuit would be a DAC or a ADC, both
 <p align="center">
 	
 ![BlkDiag](https://user-images.githubusercontent.com/72560181/201829701-5511e9ba-f90c-4bba-a575-4af76565b4e7.jpg)
+	Fig 1: Reference Circuit for LTE Comparator
 </p>
 
 With respect to the Fig. 1 above, the circuitry of the design follows a mixed approach wherein some part is designed in SPICE using netlists and some part is designed using Hardware Description Language [Verilog]. But the overall principle on which this SoC works can be broadly jotted down in the following:
