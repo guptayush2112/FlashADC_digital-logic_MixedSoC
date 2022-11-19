@@ -159,7 +159,7 @@ The schematic and component symbol of the DRAM was designed at a transistor-leve
 </p>
 
 
-## Thermometer to Gray Encoder
+## DCVSL logic Thermometer to Gray Encoder
 
 ### Gray bit-4 Circuit
 <p align="center">
@@ -242,9 +242,9 @@ The schematic and component symbol of the DRAM was designed at a transistor-leve
 </p>
 
 
-## Transient Analysis & SPICE Netlist
+## Simulation
 
-### LTE Comparator
+### LTE-Comparator
 
 <p align="center">
   <img src="Imgs/LTE-Comparator/Comp_trans.jpg"></br>
@@ -283,8 +283,7 @@ Herewith is the Netlist generated for the above design:
 	.endc
 	.end
 
-
-### Thermometer to Gray Encoder
+### DCVSL Logic Thermometer to Gray Encoder
 
 <p align="center">
   <img src="Imgs/Thermometer-Gray-Enc/g4_trans.jpg"></br>
