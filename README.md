@@ -148,14 +148,8 @@ The schematic and component symbol of the DRAM was designed at a transistor-leve
 </p>
 
 <p align="center">
-  <img src="Imgs/LTE-Comparator/Comp_symb.jpg"></br>
-  Fig. 6(b) : Comparator Symbol
-</p>
-
-
-<p align="center">
   <img src="Imgs/LTE-Comparator/Comp_tb.jpg"></br>
-  Fig. 6(c) : Comparator Testbench
+  Fig. 6(b) : Comparator Symbol and Testbench
 </p>
 
 
@@ -168,13 +162,8 @@ The schematic and component symbol of the DRAM was designed at a transistor-leve
 </p>
 
 <p align="center">
-  <img src="Imgs/Thermometer-Gray-Enc/g4_symb.jpg"></br>
-  Fig. 7(b): Symbol
-</p>
-
-<p align="center">
   <img src="Imgs/Thermometer-Gray-Enc/g4_tb.jpg"></br>
-  Fig. 7(c): Testbench
+  Fig. 7(b): Symbol and Testbench
 </p>
 
 ### Gray bit-3 Circuit
@@ -184,13 +173,8 @@ The schematic and component symbol of the DRAM was designed at a transistor-leve
 </p>
 
 <p align="center">
-  <img src="Imgs/Thermometer-Gray-Enc/g3_symb.jpg"></br>
-  Fig. 8(b): Symbol
-</p>
-
-<p align="center">
   <img src="Imgs/Thermometer-Gray-Enc/g3_tb.jpg"></br>
-  Fig. 8(c): Testbench
+  Fig. 8(b): Symbol and Testbench
 </p>
 
 ### Gray bit-2 Circuit
@@ -200,13 +184,8 @@ The schematic and component symbol of the DRAM was designed at a transistor-leve
 </p>
 
 <p align="center">
-  <img src="Imgs/Thermometer-Gray-Enc/g2_symb.jpg"></br>
-  Fig. 9(b): Symbol
-</p>
-
-<p align="center">
   <img src="Imgs/Thermometer-Gray-Enc/g2_tb.jpg"></br>
-  Fig. 9(c): Testbench
+  Fig. 9(b): Symbol and Testbench
 </p>
 
 ### Gray bit-1 Circuit
@@ -216,13 +195,8 @@ The schematic and component symbol of the DRAM was designed at a transistor-leve
 </p>
 
 <p align="center">
-  <img src="Imgs/Thermometer-Gray-Enc/g1_symb.jpg"></br>
-  Fig. 10(b): Symbol
-</p>
-
-<p align="center">
   <img src="Imgs/Thermometer-Gray-Enc/g1_tb.jpg"></br>
-  Fig. 10(c): Testbench
+  Fig. 10(b): Symbol and Testbench
 </p>
 
 ### Gray bit-0 Circuit
@@ -232,13 +206,8 @@ The schematic and component symbol of the DRAM was designed at a transistor-leve
 </p>
 
 <p align="center">
-  <img src="Imgs/Thermometer-Gray-Enc/g0_symb.jpg"></br>
-  Fig. 11(b): Symbol
-</p>
-
-<p align="center">
   <img src="Imgs/Thermometer-Gray-Enc/g0_tb.jpg"></br>
-  Fig. 11(c): Testbench
+  Fig. 11(b): Symbol and Testbench
 </p>
 
 
