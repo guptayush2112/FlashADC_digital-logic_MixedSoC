@@ -341,14 +341,14 @@ The digital blocks were first written in Verilog as per the suitable modelling s
 
 ### 5-to-32 Gray to Thermometer Decoder
 
+![dip00001](https://user-images.githubusercontent.com/72560181/202860035-e786e007-143f-47ee-bfd4-928e8cabfa84.jpg)
 <p align="center">
-  <img src="Testbench Simulation/tb350.jpg"></br>
-  Fig. 14 (a): Decoder Output when Gray Bit = 
+  Fig. 14 (a): Decoder Output when Gray Bit = 00001
 </p>
 
+![dip10000](https://user-images.githubusercontent.com/72560181/202860069-dd1365b9-a34d-46d9-b51e-fc40872998df.jpg)
 <p align="center">
-  <img src="Testbench Simulation/tb350.jpg"></br>
-  Fig. 14 (b): Decoder Output when Gray Bit = 
+  Fig. 14 (b): Decoder Output when Gray Bit = 10000
 </p>
 
 ### 32-bit Priority Encoder
