@@ -9,8 +9,8 @@ Featured in this repository is the Design and Analysis of a 5-bit Flash ADC buil
  * [5-Bit Flash ADC Design](#5-Bit-Flash-ADC-Design)
  * [Custom Digital Logic](#Custom-Digital-Logic)
  * [Tools Used](#Tools-Used)
- * [Analog Schematic Design and Simulation](#Analog-Schematic-Design-and-Simulation)
- * [Verilog Code Development and Simulation](#Verilog-Code-Development-and-Simulation)
+ * [Analog Blocks Design and Simulation](#Analog-Blocks-Design-and-Simulation)
+ * [Digital Logic Blocks Design and Simulation](#Digital-Logic-Blocks-Design-and-Simulation)
  * [Observations & Conclusion](#Observations-&-Conclusion)
  * [Author](#Author)
  * [Acknowledgements](#Acknowledgements)
@@ -135,7 +135,7 @@ To know more, kindly refer to: <a href='https://github.com/google/skywater-pdk'>
 </p>
 
 
-# Analog Schematic Design and Simulation
+# Analog Blocks Design and Simulation
 
 ## LTE Comparator
 
@@ -325,22 +325,14 @@ Herewith is the Netlist generated for the above design:
 	.lib 
 
 
-# Verilog Code Development and Simulation
+# Digital Logic Blocks Design and Simulation
 
-## 5-to-32 Gray to Thermometer Decoder using Behavioral Modelling
+## 5-to-32 Gray to Thermometer Decoder
 
-For Behavioral Verilog code, kindly refer to: <a href='https://github.com/guptayush2112/FlashADC_digital-logic_MixedSoC/blob/main/Verilog%20src%20codes/dec_gray532_bh.v'>5-to-32 Thermometer Decoder</a></br>
+### Verilog Code
+For Behavioral Verilog code, refer to: <a href='https://github.com/guptayush2112/FlashADC_digital-logic_MixedSoC/blob/main/Verilog%20src%20codes/dec_gray532_bh.v'>5-to-32 Thermometer Decoder</a></br>
 
-## 32-bit Priority Encoder using Structural Modelling
-
-For Sturctural Verilog, kindly refer to: <a href='https://github.com/guptayush2112/FlashADC_digital-logic_MixedSoC/blob/main/Verilog%20src%20codes/PE_32b_str.v'>32-bit Cascaded Priority Encoder with Active Low Inputs</a></br>
-
-## Makerchip IDE Simulation
-
-The digital blocks were first written in Verilog as per the suitable modelling styles. Then, the code files were added to the MakeChip IDE as Top Level Verilog files and further edited so as to run a successfull simulation. 
-
-### 5-to-32 Gray to Thermometer Decoder
-
+### Makerchip IDE Simulation
 ![dip00001](https://user-images.githubusercontent.com/72560181/202860035-e786e007-143f-47ee-bfd4-928e8cabfa84.jpg)
 <p align="center">
   Fig. 14 (a): Decoder Output when Gray Bit = 00001
@@ -351,7 +343,24 @@ The digital blocks were first written in Verilog as per the suitable modelling s
   Fig. 14 (b): Decoder Output when Gray Bit = 10000
 </p>
 
-### 32-bit Priority Encoder
+### NgSpice block and Simulation
+
+![dec_tb](https://user-images.githubusercontent.com/72560181/202871908-649a40f0-3401-4610-81ab-ce938f38b1ca.jpg)
+<p align="center">
+  Fig. 14 (c): 5-to-32 Decoder Block Testbench
+</p>
+
+![dec_trans](https://user-images.githubusercontent.com/72560181/202871997-0519278f-fdea-41e1-b130-0d338e7eecb1.jpg)
+<p align="center">
+  Fig. 14 (d): Transient Analysis of Decoder Testbench for Gray bit = 11111
+</p>
+
+## 32-bit Priority Encoder
+
+### Verilog Code
+For Sturctural Verilog, refer to: <a href='https://github.com/guptayush2112/FlashADC_digital-logic_MixedSoC/blob/main/Verilog%20src%20codes/PE_32b_str.v'>32-bit Cascaded Priority Encoder with Active Low Inputs</a></br>
+
+### Makerchip IDE Simulation
 
 The simulation for 4 different 5-bit Gray code combinations as per the truth table from Fig. 5(c) above is shown below.
 
@@ -373,6 +382,16 @@ The simulation for 4 different 5-bit Gray code combinations as per the truth tab
 <p align="center">
   <img src="Imgs/ip_gray_00011.jpg"></br>
   Fig. 15 (d): When Gray code Decoder input = 00011
+</p>
+
+### NgSpice block and Simulation
+
+<p align="center">
+  Fig. 15 (e): 5-to-32 Decoder Block Testbench
+</p>
+
+<p align="center">
+  Fig. 15 (f): Transient Analysis of Decoder Testbench for Gray bit = 11111
 </p>
 
 # Observations & Conclusion
