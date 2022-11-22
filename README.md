@@ -211,7 +211,7 @@ The schematic and component symbol of the DRAM was designed at a transistor-leve
 </p>
 
 
-## Simulation
+## NgSpice Simulation
 
 ### LTE-Comparator
 
