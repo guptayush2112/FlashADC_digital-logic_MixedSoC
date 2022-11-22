@@ -315,7 +315,7 @@ For Behavioral Verilog code, refer to: <a href='https://github.com/guptayush2112
 
 ![dec_tb](https://user-images.githubusercontent.com/72560181/202871908-649a40f0-3401-4610-81ab-ce938f38b1ca.jpg)
 <p align="center">
-  Fig. 14 (c): 5-to-32 Decoder Block Testbench
+  Fig. 14 (c): 5-to-32 Decoder Block Test-setup
 </p>
 
 ![dec_trans](https://user-images.githubusercontent.com/72560181/202871997-0519278f-fdea-41e1-b130-0d338e7eecb1.jpg)
@@ -355,11 +355,11 @@ The simulation for 4 different 5-bit Gray code combinations as per the truth tab
 ### NgSpice block and Simulation
 
 <p align="center">
-  Fig. 15 (e): 5-to-32 Decoder Block Testbench
+  Fig. 15 (e): 32-bit Priority Encoder Test-setup
 </p>
 
 <p align="center">
-  Fig. 15 (f): Transient Analysis of Decoder Testbench for Gray bit = 11111
+  Fig. 15 (f): Transient Analysis of Priority Enc
 </p>
 
 # Observations & Conclusion
