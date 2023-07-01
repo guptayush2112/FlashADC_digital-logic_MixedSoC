@@ -1,6 +1,6 @@
 # LTE-Comparator 5-bit Flash ADC with dual stage Encoding Logic using Google SkyWater 130nm PDK and eSim
 
-Featured in this repository is the Design and Analysis of a 5-bit Flash ADC build with the help of LTE Comparators and interfaced with a custom digital logic of 5-to-32 Decoder and 32-bit Priority Encoder. The design was done in eSim tool by FOSSEE, IIT Bombay using the Google SkyWater 130nm Process Design Kit.
+Featured in this repository is the Design and Analysis of a 5-bit Flash ADC build with the help of LTE Comparators and interfaced with a custom digital logic of 5-to-32 Decoder and 32-bit Priority Encoder. The design was done in eSim tool by FOSSEE, IIT Bombay using the Google SkyWater 130nm Process Design Kit. This submission is towards the Mixed Signal SoC Design Hackathon organized by FOSSEE-IIT Bombay and VLSI System Design.
 
 # Table of Contents
  * [Introduction](#Introduction)
